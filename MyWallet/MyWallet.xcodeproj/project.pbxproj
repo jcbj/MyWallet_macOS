@@ -400,6 +400,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MyWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = VEEX.MyWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -496,6 +497,7 @@
 				49ED605C1DAE9090009999DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49ED605D1DAE9090009999DF /* Build configuration list for PBXNativeTarget "MyWalletTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +506,7 @@
 				49ED605F1DAE9090009999DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49ED60601DAE9090009999DF /* Build configuration list for PBXNativeTarget "MyWalletUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +515,7 @@
 				49ED60621DAE9090009999DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
