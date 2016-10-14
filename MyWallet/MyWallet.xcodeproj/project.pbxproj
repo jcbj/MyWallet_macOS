@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492E0E981DB1178C00EF5FB9 /* JCLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492E0E971DB1178C00EF5FB9 /* JCLogger.swift */; };
 		49ED60391DAE9090009999DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED60381DAE9090009999DF /* AppDelegate.swift */; };
 		49ED603B1DAE9090009999DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED603A1DAE9090009999DF /* ViewController.swift */; };
 		49ED603D1DAE9090009999DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49ED603C1DAE9090009999DF /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		492E0E971DB1178C00EF5FB9 /* JCLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCLogger.swift; sourceTree = "<group>"; };
 		49ED60351DAE9090009999DF /* MyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49ED60381DAE9090009999DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49ED603A1DAE9090009999DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		492E0E961DB1177700EF5FB9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				492E0E971DB1178C00EF5FB9 /* JCLogger.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		49ED602C1DAE9090009999DF = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 		49ED60371DAE9090009999DF /* MyWallet */ = {
 			isa = PBXGroup;
 			children = (
+				492E0E961DB1177700EF5FB9 /* Utility */,
 				49ED60381DAE9090009999DF /* AppDelegate.swift */,
 				49ED603A1DAE9090009999DF /* ViewController.swift */,
 				49ED603C1DAE9090009999DF /* Assets.xcassets */,
@@ -255,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492E0E981DB1178C00EF5FB9 /* JCLogger.swift in Sources */,
 				49ED603B1DAE9090009999DF /* ViewController.swift in Sources */,
 				49ED60391DAE9090009999DF /* AppDelegate.swift in Sources */,
 			);
