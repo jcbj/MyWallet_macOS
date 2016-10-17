@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4914E5521DB4EFF500A60898 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4914E5511DB4EFF500A60898 /* libsqlite3.0.tbd */; };
 		492E0E981DB1178C00EF5FB9 /* JCLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492E0E971DB1178C00EF5FB9 /* JCLogger.swift */; };
 		49ED60391DAE9090009999DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED60381DAE9090009999DF /* AppDelegate.swift */; };
 		49ED603B1DAE9090009999DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED603A1DAE9090009999DF /* ViewController.swift */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4914E5511DB4EFF500A60898 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4914E5531DB4F03200A60898 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		492E0E971DB1178C00EF5FB9 /* JCLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCLogger.swift; sourceTree = "<group>"; };
 		49ED60351DAE9090009999DF /* MyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49ED60381DAE9090009999DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4914E5521DB4EFF500A60898 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4914E5501DB4EFF500A60898 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4914E5511DB4EFF500A60898 /* libsqlite3.0.tbd */,
+				4914E5531DB4F03200A60898 /* Bridging-Header.h */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		492E0E961DB1177700EF5FB9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 				49ED60491DAE9090009999DF /* MyWalletTests */,
 				49ED60541DAE9090009999DF /* MyWalletUITests */,
 				49ED60361DAE9090009999DF /* Products */,
+				4914E5501DB4EFF500A60898 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -415,6 +429,7 @@
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = VEEX.MyWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -428,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VEEX.MyWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
