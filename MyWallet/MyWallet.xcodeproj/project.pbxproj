@@ -11,6 +11,10 @@
 		492E0E981DB1178C00EF5FB9 /* JCLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492E0E971DB1178C00EF5FB9 /* JCLogger.swift */; };
 		4932BAF41DB654DA00252417 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932BAF31DB654DA00252417 /* Utility.swift */; };
 		4932BAF61DB6612C00252417 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932BAF51DB6612C00252417 /* GlobalData.swift */; };
+		4932BAF81DB66D0500252417 /* IDataStoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932BAF71DB66D0500252417 /* IDataStoreHelper.swift */; };
+		4932BAFA1DB66D1F00252417 /* SQLite3Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932BAF91DB66D1F00252417 /* SQLite3Helper.swift */; };
+		4932BAFC1DB66DA600252417 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932BAFB1DB66DA600252417 /* ErrorCode.swift */; };
+		4932BAFE1DB66EEB00252417 /* DataStoreHelperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932BAFD1DB66EEB00252417 /* DataStoreHelperFactory.swift */; };
 		49ED60391DAE9090009999DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED60381DAE9090009999DF /* AppDelegate.swift */; };
 		49ED603B1DAE9090009999DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED603A1DAE9090009999DF /* ViewController.swift */; };
 		49ED603D1DAE9090009999DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49ED603C1DAE9090009999DF /* Assets.xcassets */; };
@@ -42,6 +46,10 @@
 		492E0E971DB1178C00EF5FB9 /* JCLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCLogger.swift; sourceTree = "<group>"; };
 		4932BAF31DB654DA00252417 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		4932BAF51DB6612C00252417 /* GlobalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
+		4932BAF71DB66D0500252417 /* IDataStoreHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDataStoreHelper.swift; sourceTree = "<group>"; };
+		4932BAF91DB66D1F00252417 /* SQLite3Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLite3Helper.swift; sourceTree = "<group>"; };
+		4932BAFB1DB66DA600252417 /* ErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
+		4932BAFD1DB66EEB00252417 /* DataStoreHelperFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStoreHelperFactory.swift; sourceTree = "<group>"; };
 		49ED60351DAE9090009999DF /* MyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49ED60381DAE9090009999DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49ED603A1DAE9090009999DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +105,7 @@
 				492E0E971DB1178C00EF5FB9 /* JCLogger.swift */,
 				4932BAF31DB654DA00252417 /* Utility.swift */,
 				4932BAF51DB6612C00252417 /* GlobalData.swift */,
+				4932BAFB1DB66DA600252417 /* ErrorCode.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -104,6 +113,9 @@
 		4932BAF21DB6549900252417 /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
+				4932BAF71DB66D0500252417 /* IDataStoreHelper.swift */,
+				4932BAF91DB66D1F00252417 /* SQLite3Helper.swift */,
+				4932BAFD1DB66EEB00252417 /* DataStoreHelperFactory.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -296,9 +308,13 @@
 			files = (
 				4932BAF41DB654DA00252417 /* Utility.swift in Sources */,
 				4932BAF61DB6612C00252417 /* GlobalData.swift in Sources */,
+				4932BAFA1DB66D1F00252417 /* SQLite3Helper.swift in Sources */,
 				492E0E981DB1178C00EF5FB9 /* JCLogger.swift in Sources */,
 				49ED603B1DAE9090009999DF /* ViewController.swift in Sources */,
 				49ED60391DAE9090009999DF /* AppDelegate.swift in Sources */,
+				4932BAF81DB66D0500252417 /* IDataStoreHelper.swift in Sources */,
+				4932BAFC1DB66DA600252417 /* ErrorCode.swift in Sources */,
+				4932BAFE1DB66EEB00252417 /* DataStoreHelperFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

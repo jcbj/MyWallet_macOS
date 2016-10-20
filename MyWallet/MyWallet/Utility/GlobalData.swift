@@ -14,8 +14,11 @@ final class GlobalData {
         
     }
     
-    static let Instance: GlobalData = { () -> GlobalData in
+    static let instance: GlobalData = {
         return GlobalData()
     }()
     
+    static let defaultDataStoreType = DataStoreType.SQLite3
+    
+    let dataStoreHelper: IDataStoreHelper = { DataStoreHelperFactory.createDataStoreHelper(type: defaultDataStoreType)}()
 }

@@ -41,4 +41,19 @@ final class Utility {
         
         return first + "/" + second
     }
+    
+    func createDirectory(atPath: String, withIntermediateDirectories: Bool, attributes: [String : Any]) -> Bool {
+        
+        var result = true
+        
+        let fileManager = FileManager()
+//        if fileManager.fileExists(atPath: atPath, isDirectory: UnsafeMutablePointer<ObjCBool>?)
+        do {
+            try fileManager.createDirectory(atPath: atPath, withIntermediateDirectories: withIntermediateDirectories, attributes: attributes)
+        } catch {
+            result = false
+        }
+        
+        return result
+    }
 }

@@ -15,16 +15,20 @@ class ViewController: NSViewController {
 
         // Do any additional setup after loading the view.
         
-//        //Test import SQLite3
-//        var db:OpaquePointer?
-//        let sqlitepath = Bundle.main.bundlePath + "/Wallet.db"
-//        let state = sqlite3_open(sqlitepath, &db)
-//        if state == SQLITE_OK {
-//            JCLogger.log(level: .Info, "Open db is success.")
-//        } else {
-//            JCLogger.log(level: .Error, "Open db is failed.")
+//        //Test Login Part DB
+//        if GlobalData.instance.dataStoreHelper.initDataStore() {
+//            
+//            if GlobalData.instance.dataStoreHelper.register(name: "jc", password: "jc123", email: "jc@126.com") {
+//                if GlobalData.instance.dataStoreHelper.login(name: "jc", password: "jc") {
+//                    JCLogger.log(level: .Alert, "DB Failed.")
+//                } else if GlobalData.instance.dataStoreHelper.login(name: "jc", password: "jc123") {
+//                    GlobalData.instance.dataStoreHelper.logout()
+//                }
+//            }
 //        }
-//        //*********************
+        
+        
+        
     }
 
     override var representedObject: Any? {
