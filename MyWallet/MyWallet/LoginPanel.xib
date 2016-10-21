@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="登录或注册" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="LoginPanel" customModule="MyWallet" customModuleProvider="target">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="497" height="253"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="497" height="253"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-0g-btX" userLabel="UserName">
+                        <rect key="frame" x="98" y="204" width="64" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="grg-3p-b5d"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="wHX-BU-Aa6"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="用户名" id="rgn-1g-8Mp">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qnv-6g-wQi" userLabel="Password">
+                        <rect key="frame" x="98" y="155" width="64" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="KTx-mo-N5t"/>
+                            <constraint firstAttribute="width" constant="60" id="sOJ-hq-mZz"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="密码" id="q6N-ei-wDP">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lx6-KE-chk" userLabel="TFUserName">
+                        <rect key="frame" x="176" y="201" width="221" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="请输入用户名" drawsBackground="YES" id="GKe-Yy-8RF">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LOc-WX-6eS" userLabel="TFPassword">
+                        <rect key="frame" x="176" y="152" width="221" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="请输入密码" drawsBackground="YES" id="H26-ra-6RH">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PYL-6e-eRC" userLabel="Email">
+                        <rect key="frame" x="98" y="106" width="64" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="bMv-A7-heg"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Email" id="1cO-cl-kwV">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CMo-HX-Ntn" userLabel="Register">
+                        <rect key="frame" x="114" y="67" width="112" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="y6n-Dn-HeD"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="注册" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cbW-vf-gvs">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="registerClick:" target="QvC-M9-y7g" id="IEm-9g-K06"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ESK-Xc-tSI" userLabel="Login">
+                        <rect key="frame" x="271" y="67" width="112" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="3W3-Kk-gny"/>
+                            <constraint firstAttribute="width" constant="100" id="lvQ-42-NER"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="登录" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LWu-os-bEO">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="loginClick:" target="QvC-M9-y7g" id="RQ1-Ep-BIN"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-B7-Rkq" userLabel="TFEmail">
+                        <rect key="frame" x="176" y="103" width="221" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="请输入电子邮件地址" drawsBackground="YES" id="ZE0-ng-jMU">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZD2-Zx-BEl" userLabel="RCancel">
+                        <rect key="frame" x="114" y="38" width="112" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="LIZ-ct-Mtz"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="jeJ-7K-1vB"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZYU-ye-u47">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="rCancelClick:" target="QvC-M9-y7g" id="8I3-XA-Dlg"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OgR-fD-3YP" userLabel="ROk">
+                        <rect key="frame" x="271" y="38" width="112" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="83E-xn-Jf0"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="cPu-BG-fxK"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="kPl-SH-FrJ"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="确认" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OPS-lh-UkJ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="rOkClick:" target="QvC-M9-y7g" id="Eay-DS-xvk"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gbc-B7-Rkq" secondAttribute="trailing" constant="100" id="4m8-xs-7Y8"/>
+                    <constraint firstAttribute="trailing" secondItem="Lx6-KE-chk" secondAttribute="trailing" constant="100" id="C6A-ci-7YX"/>
+                    <constraint firstAttribute="trailing" secondItem="OgR-fD-3YP" secondAttribute="trailing" constant="120" id="CTP-qS-q7M"/>
+                    <constraint firstAttribute="trailing" secondItem="LOc-WX-6eS" secondAttribute="trailing" constant="100" id="D3u-pe-D6P"/>
+                    <constraint firstItem="gbc-B7-Rkq" firstAttribute="leading" secondItem="PYL-6e-eRC" secondAttribute="trailing" constant="16" id="IZm-hN-dew"/>
+                    <constraint firstItem="qnv-6g-wQi" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="100" id="JWd-Tn-BiX"/>
+                    <constraint firstItem="PYL-6e-eRC" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="100" id="Ket-hw-u6N"/>
+                    <constraint firstItem="LOc-WX-6eS" firstAttribute="baseline" secondItem="qnv-6g-wQi" secondAttribute="baseline" id="NFK-si-vWe"/>
+                    <constraint firstItem="e8G-0g-btX" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="100" id="O9W-Se-fg2"/>
+                    <constraint firstItem="qnv-6g-wQi" firstAttribute="top" secondItem="e8G-0g-btX" secondAttribute="bottom" constant="32" id="OVW-uY-XDY"/>
+                    <constraint firstItem="ESK-Xc-tSI" firstAttribute="baseline" secondItem="CMo-HX-Ntn" secondAttribute="baseline" id="YTc-UF-J5D"/>
+                    <constraint firstAttribute="trailing" secondItem="ESK-Xc-tSI" secondAttribute="trailing" constant="120" id="bqP-bq-PfH"/>
+                    <constraint firstItem="CMo-HX-Ntn" firstAttribute="top" secondItem="gbc-B7-Rkq" secondAttribute="bottom" constant="8" id="eGZ-ba-d9a"/>
+                    <constraint firstItem="e8G-0g-btX" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="32" id="f0B-at-zFt"/>
+                    <constraint firstItem="gbc-B7-Rkq" firstAttribute="baseline" secondItem="PYL-6e-eRC" secondAttribute="baseline" id="gXV-Bt-HCc"/>
+                    <constraint firstItem="ZD2-Zx-BEl" firstAttribute="top" secondItem="CMo-HX-Ntn" secondAttribute="bottom" constant="8" id="jCj-bd-hzK"/>
+                    <constraint firstItem="LOc-WX-6eS" firstAttribute="leading" secondItem="qnv-6g-wQi" secondAttribute="trailing" constant="16" id="kWu-Md-LLQ"/>
+                    <constraint firstItem="PYL-6e-eRC" firstAttribute="top" secondItem="qnv-6g-wQi" secondAttribute="bottom" constant="32" id="l12-kV-8nF"/>
+                    <constraint firstItem="Lx6-KE-chk" firstAttribute="leading" secondItem="e8G-0g-btX" secondAttribute="trailing" constant="16" id="oqI-Ku-hYV"/>
+                    <constraint firstItem="ZD2-Zx-BEl" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="120" id="pCD-Fs-3Rh"/>
+                    <constraint firstItem="Lx6-KE-chk" firstAttribute="baseline" secondItem="e8G-0g-btX" secondAttribute="baseline" id="sxb-JL-0Fu"/>
+                    <constraint firstItem="OgR-fD-3YP" firstAttribute="baseline" secondItem="ZD2-Zx-BEl" secondAttribute="baseline" id="uaL-PD-3fb"/>
+                    <constraint firstItem="OgR-fD-3YP" firstAttribute="baseline" secondItem="ZD2-Zx-BEl" secondAttribute="baseline" id="vaF-Av-Kh4"/>
+                    <constraint firstItem="CMo-HX-Ntn" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="120" id="xkE-Pe-wYa"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="btnLogin" destination="ESK-Xc-tSI" id="OWP-s7-4aZ"/>
+                <outlet property="btnRCancel" destination="ZD2-Zx-BEl" id="Ajk-HX-XSv"/>
+                <outlet property="btnROk" destination="OgR-fD-3YP" id="vBx-tO-4qf"/>
+                <outlet property="btnRegister" destination="CMo-HX-Ntn" id="kwp-5h-jda"/>
+                <outlet property="labelEmail" destination="PYL-6e-eRC" id="J8f-aO-a5W"/>
+                <outlet property="labelPassword" destination="qnv-6g-wQi" id="gzJ-sb-hpv"/>
+                <outlet property="labelUserName" destination="e8G-0g-btX" id="wxE-1K-wJ5"/>
+                <outlet property="tfEmail" destination="gbc-B7-Rkq" id="4FR-wl-T2L"/>
+                <outlet property="tfPassword" destination="LOc-WX-6eS" id="PEV-SR-kBD"/>
+                <outlet property="tfUserName" destination="Lx6-KE-chk" id="8vg-JA-8iu"/>
+            </connections>
+            <point key="canvasLocation" x="149.5" y="143.5"/>
+        </window>
+    </objects>
+</document>

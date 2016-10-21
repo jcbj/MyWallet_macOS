@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4914E5521DB4EFF500A60898 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4914E5511DB4EFF500A60898 /* libsqlite3.0.tbd */; };
+		4924C8F31DBA4A4200E81E59 /* LoginPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924C8F21DBA4A4200E81E59 /* LoginPanel.swift */; };
 		492E0E981DB1178C00EF5FB9 /* JCLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492E0E971DB1178C00EF5FB9 /* JCLogger.swift */; };
 		4932BAF41DB654DA00252417 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932BAF31DB654DA00252417 /* Utility.swift */; };
 		4932BAF61DB6612C00252417 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932BAF51DB6612C00252417 /* GlobalData.swift */; };
@@ -15,6 +16,7 @@
 		4932BAFA1DB66D1F00252417 /* SQLite3Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932BAF91DB66D1F00252417 /* SQLite3Helper.swift */; };
 		4932BAFC1DB66DA600252417 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932BAFB1DB66DA600252417 /* ErrorCode.swift */; };
 		4932BAFE1DB66EEB00252417 /* DataStoreHelperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932BAFD1DB66EEB00252417 /* DataStoreHelperFactory.swift */; };
+		494B4A381DBA4884003124ED /* LoginPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494B4A371DBA4884003124ED /* LoginPanel.xib */; };
 		49ED60391DAE9090009999DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED60381DAE9090009999DF /* AppDelegate.swift */; };
 		49ED603B1DAE9090009999DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED603A1DAE9090009999DF /* ViewController.swift */; };
 		49ED603D1DAE9090009999DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49ED603C1DAE9090009999DF /* Assets.xcassets */; };
@@ -43,6 +45,7 @@
 /* Begin PBXFileReference section */
 		4914E5511DB4EFF500A60898 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		4914E5531DB4F03200A60898 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		4924C8F21DBA4A4200E81E59 /* LoginPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPanel.swift; sourceTree = "<group>"; };
 		492E0E971DB1178C00EF5FB9 /* JCLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCLogger.swift; sourceTree = "<group>"; };
 		4932BAF31DB654DA00252417 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		4932BAF51DB6612C00252417 /* GlobalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		4932BAF91DB66D1F00252417 /* SQLite3Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLite3Helper.swift; sourceTree = "<group>"; };
 		4932BAFB1DB66DA600252417 /* ErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
 		4932BAFD1DB66EEB00252417 /* DataStoreHelperFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStoreHelperFactory.swift; sourceTree = "<group>"; };
+		494B4A371DBA4884003124ED /* LoginPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPanel.xib; sourceTree = "<group>"; };
 		49ED60351DAE9090009999DF /* MyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49ED60381DAE9090009999DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49ED603A1DAE9090009999DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				49ED603C1DAE9090009999DF /* Assets.xcassets */,
 				49ED603E1DAE9090009999DF /* Main.storyboard */,
 				49ED60411DAE9090009999DF /* Info.plist */,
+				494B4A371DBA4884003124ED /* LoginPanel.xib */,
+				4924C8F21DBA4A4200E81E59 /* LoginPanel.swift */,
 			);
 			path = MyWallet;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494B4A381DBA4884003124ED /* LoginPanel.xib in Resources */,
 				49ED603D1DAE9090009999DF /* Assets.xcassets in Resources */,
 				49ED60401DAE9090009999DF /* Main.storyboard in Resources */,
 			);
@@ -312,6 +319,7 @@
 				492E0E981DB1178C00EF5FB9 /* JCLogger.swift in Sources */,
 				49ED603B1DAE9090009999DF /* ViewController.swift in Sources */,
 				49ED60391DAE9090009999DF /* AppDelegate.swift in Sources */,
+				4924C8F31DBA4A4200E81E59 /* LoginPanel.swift in Sources */,
 				4932BAF81DB66D0500252417 /* IDataStoreHelper.swift in Sources */,
 				4932BAFC1DB66DA600252417 /* ErrorCode.swift in Sources */,
 				4932BAFE1DB66EEB00252417 /* DataStoreHelperFactory.swift in Sources */,
