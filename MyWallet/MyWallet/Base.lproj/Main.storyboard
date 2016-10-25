@@ -659,10 +659,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Tab View Controller-->
+        <!--Main Tab View Controller-->
         <scene sceneID="fN0-uF-YBb">
             <objects>
-                <tabViewController selectedTabViewItemIndex="0" id="DGJ-Ms-7DE" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="DGJ-Ms-7DE" customClass="MainTabViewController" customModule="MyWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="主页" identifier="Home" id="C6W-HY-Ykp"/>
                         <tabViewItem label="总账" identifier="Total" id="8Ss-r0-nLO"/>

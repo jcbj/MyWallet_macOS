@@ -10,7 +10,6 @@ import Cocoa
 
 class LoginPanel: NSPanel {
     
-    
     @IBOutlet weak var labelUserName: NSTextField!
     @IBOutlet weak var labelPassword: NSTextField!
     @IBOutlet weak var labelEmail: NSTextField!
@@ -26,14 +25,18 @@ class LoginPanel: NSPanel {
     @IBOutlet weak var btnROk: NSButton!
     
     @IBAction func registerClick(_ sender: NSButton) {
+        self.parent?.endSheet(self, returnCode: 1)
     }
     
     @IBAction func loginClick(_ sender: NSButton) {
+        self.parent?.endSheet(self, returnCode: 0)
     }
     
     @IBAction func rCancelClick(_ sender: NSButton) {
+        self.parent?.endSheet(self, returnCode: 0)
     }
     
     @IBAction func rOkClick(_ sender: NSButton) {
+        self.parent?.endSheet(self, returnCode: 1)
     }
 }
